@@ -1,0 +1,44 @@
+.profiles {
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-position: 10%;
+      h2 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 2.5rem;
+        color: #dcddd8;
+        margin-bottom: 2rem;
+      }
+      a {
+        font-size: 1rem;
+        color: #dcddd8;;
+      }
+  
+  .profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .profile-link:hover {
+    color: #0077b5; /* LinkedIn's color */
+    transform: scale(1.1);
+  }
+  
+  .profile-link svg {
+    font-size: 1.5rem;
+  }
+}
+  

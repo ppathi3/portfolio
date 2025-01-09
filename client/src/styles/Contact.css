@@ -19,7 +19,7 @@
     align-items: center;
   }
   
-  .contact input[type="email"] {
+  .contact input[type="email"]{
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -30,6 +30,18 @@
     transition: box-shadow 0.3s, border-color 0.3s;
   }
   
+  .contact   input[type="number"]{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+
   .contact input[type="email"]:focus {
     border-color: #0071e3; /* Apple blue */
     box-shadow: 0 4px 8px rgba(0, 113, 227, 0.2);

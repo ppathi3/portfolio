@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './../styles/Contact.css';
 
-const Contact = ({id}) => {
+const Contact = ({ id }) => {
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +19,13 @@ const Contact = ({id}) => {
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="message"
+          placeholder="Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           required
         />
         <button type="submit">Send</button>

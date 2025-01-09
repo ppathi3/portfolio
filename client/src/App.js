@@ -1,55 +1,3 @@
-// //App.js
-// import React, { useEffect } from 'react';
-// // import axios from 'axios';
-// import './styles/App.css';
-// import Header from './components/Header';
-// import AboutMe from './components/AboutMe';
-// import Projects from './components/Projects';
-// import Resume from './components/Resume';
-// import Contact from './components/Contact';
-
-// //data will be the string we send from our server
-// // const apiCall = () => {
-// //   axios.get('http://localhost:3000').then((data) => {
-// //     //this console.log will be in our frontend console
-// //     console.log(data)
-// //   })
-// // }
-
-// const App = () => {
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       (entries) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting) {
-//             entry.target.classList.add('visible');
-//             entry.target.classList.remove('hidden');
-//           } else {
-//             entry.target.classList.add('hidden');
-//             entry.target.classList.remove('visible');
-//           }
-//         });
-//       },
-//       { threshold: 0.3 } // Trigger when 30% of the section is visible
-//     );
-
-//     const sections = document.querySelectorAll('section, header');
-//     sections.forEach((section) => observer.observe(section));
-
-//     return () => observer.disconnect(); // Cleanup observer
-//   }, []);
-//   return (
-//     <div className="app">
-//       <Header />
-//       <AboutMe />
-//       <Projects />
-//       <Resume />
-//       <Contact />
-//     </div>
-//   );
-// };
-
-// export default App;
 import React, { useEffect, useState } from 'react';
 import './styles/App.css';
 import Header from './components/Header';
@@ -57,6 +5,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Profiles from './components/Profiles';
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -120,6 +69,7 @@ const App = () => {
       <AboutMe id="about-me" />
       <Projects id="projects" />
       <Resume id="resume" />
+      <Profiles id="profiles" />
       <Contact id="contact" />
       {showScrollButton && (
         <button className="scroll-to-top" onClick={handleScrollToTop}>
