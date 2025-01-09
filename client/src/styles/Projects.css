@@ -1,0 +1,36 @@
+.projects {
+    /* padding: 4rem 2rem; */
+    /* background-color: #f7f7f7; */
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #dcddd8;
+    margin-bottom: 2rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    /* border: 1px solid #ddd; */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    color: #dcddd8;;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #dcddd8;;
+  }
+  

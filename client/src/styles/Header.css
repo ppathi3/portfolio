@@ -1,0 +1,23 @@
+.header {
+  /* background-image: url('https://images.unsplash.com/photo-1467709757686-06cbdd818d90?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: 10%;
+    padding-top: 80px;
+  }
+  
+  .logo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #dcddd8;
+    margin: 0;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    color: #dcddd8;
+    margin-top: 1rem;
+  }

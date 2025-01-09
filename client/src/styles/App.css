@@ -1,0 +1,97 @@
+/* General styles */
+
+/* Base styling for all sections */
+section,
+header {
+  margin: auto;
+  padding-top: 50px;
+  max-width: 1000px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* When visible */
+section.visible,
+header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When hidden */
+section.hidden,
+header.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Scroll-out effect */
+}
+
+/* Header styling */
+header {
+  /* background-color: #eaeaea;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+
+/* Projects styling */
+.about-me, .projects, .resume, .contact {
+  /* background-color: #eaeaea; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #dcddd8;
+  transition: color 0.3s;
+}
+
+.navbar button:hover {
+  color: #0071e3; /* Apple blue */
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 113, 227, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0.8;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

@@ -1,0 +1,59 @@
+.contact {
+    /* padding: 4rem 2rem; */
+    /* background-color: #f7f7f7; */
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #dcddd8;
+    margin-bottom: 2rem;
+  }
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input[type="email"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .contact input[type="email"]:focus {
+    border-color: #0071e3; /* Apple blue */
+    box-shadow: 0 4px 8px rgba(0, 113, 227, 0.2);
+    outline: none;
+  }
+  
+  .contact button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact button:hover {
+    background-color: #005bb5;
+    box-shadow: 0 4px 6px rgba(0, 91, 181, 0.3);
+  }
+  
+  .contact button:active {
+    transform: scale(0.98);
+  }
+  
