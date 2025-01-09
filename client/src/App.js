@@ -57,7 +57,6 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
-import VideoBackground from './components/VideoBackground';
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -117,7 +116,6 @@ const App = () => {
         <button onClick={() => handleScrollToSection('resume')}>Resume</button>
         <button onClick={() => handleScrollToSection('contact')}>Contact</button>
       </nav>
-      {/* <VideoBackground> */}
       <Header id="header" />
       <AboutMe id="about-me" />
       <Projects id="projects" />
@@ -128,7 +126,6 @@ const App = () => {
           ↑
         </button>
       )}
-      {/* </VideoBackground> */}
     </div>
   );
 };
